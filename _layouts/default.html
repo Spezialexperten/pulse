@@ -1,21 +1,22 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-{% include head.html %}
-</head>
+	<head>
+	{% include head.html %}
+	</head>
 
-<body id="{{ page.id }}">
+	<body id="{{ page.id }}">
+		<a id="skipnav" href="#content">Skip to main content</a>
 
-{% include header.html %}
+		{% include header.html %}
 
-<section id="content">
-  {{ content }}
-</section>
+		<section id="content">
+		  {{ content }}
+		</section>
 
-{% include reporting.html %}
+		{% include reporting.html %}
 
-<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/main.js"></script>
 
-</body>
+	</body>
 </html>
