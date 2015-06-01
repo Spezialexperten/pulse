@@ -54,9 +54,9 @@ $(document).ready(function () {
     if (type == "sort")
       return grade;
     else
-      if (grade == '' ){
-        grade = 'N/A'
-      }
+      if (grade == '' )
+        return '';
+      
       return "" +
         "<a href=\"" + labsUrlFor(row['Domain']) + "\" target=\"blank\">" +
           grade +
