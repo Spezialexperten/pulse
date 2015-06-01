@@ -53,9 +53,10 @@ $(document).ready(function () {
     var grade = display(names.grade)(data, type);
     if (type == "sort")
       return grade;
-    else if (grade == "")
-      return "";
     else
+      if (grade == '' ){
+        grade = 'N/A'
+      }
       return "" +
         "<a href=\"" + labsUrlFor(row['Domain']) + "\" target=\"blank\">" +
           grade +
